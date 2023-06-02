@@ -1,0 +1,219 @@
+name: pillumi_front
+description: A flutter project for Pillumi
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  permission_handler: ^10.2.0
+  image_picker: ^0.8.6
+  http: ^0.13.5
+  flutter_native_splash: ^2.2.14
+  camera: ^0.10.4
+  path_provider: ^2.0.14
+  image_editor: ^1.3.0
+  extended_image: ^8.0.1
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/wrong-example.png
+    - assets/correct-example.png
+    - assets/x_icon.png
+    - assets/o_icon.png
+    - assets/pill-icon-nobackground.png
+    - assets/bad-photo.jpg
+    - assets/good-photo.jpg
+    - assets/pictogram/C01.jpg
+    - assets/pictogram/C02.jpg
+    - assets/pictogram/C03.jpg
+    - assets/pictogram/C04.jpg
+    - assets/pictogram/C05.jpg
+    - assets/pictogram/C06.jpg
+    - assets/pictogram/C07.jpg
+    - assets/pictogram/C08.jpg
+    - assets/pictogram/C09.jpg
+    - assets/pictogram/C10.jpg
+    - assets/pictogram/C11.jpg
+    - assets/pictogram/C16.jpg
+    - assets/pictogram/C17.jpg
+    - assets/pictogram/C18.jpg
+    - assets/pictogram/C19.jpg
+    - assets/pictogram/C20.jpg
+    - assets/pictogram/C21.jpg
+    - assets/pictogram/C22.jpg
+    - assets/pictogram/C23.jpg
+    - assets/pictogram/C24.jpg
+    - assets/pictogram/C25.jpg
+    - assets/pictogram/C26.jpg
+    - assets/pictogram/C27.jpg
+    - assets/pictogram/C28.jpg
+    - assets/pictogram/D01.jpg
+    - assets/pictogram/D02.jpg
+    - assets/pictogram/D03.jpg
+    - assets/pictogram/D04.jpg
+    - assets/pictogram/D05.jpg
+    - assets/pictogram/D06.jpg
+    - assets/pictogram/D07.jpg
+    - assets/pictogram/D08.jpg
+    - assets/pictogram/D10.jpg
+    - assets/pictogram/D11.jpg
+    - assets/pictogram/D12.jpg
+    - assets/pictogram/D13.jpg
+    - assets/pictogram/D14.jpg
+    - assets/pictogram/D15.jpg
+    - assets/pictogram/D16.jpg
+    - assets/pictogram/D17.jpg
+    - assets/pictogram/D18.jpg
+    - assets/pictogram/D19.jpg
+    - assets/pictogram/D20.jpg
+    - assets/pictogram/D21.jpg
+    - assets/pictogram/D22.jpg
+    - assets/pictogram/D23.jpg
+    - assets/pictogram/D24.jpg
+    - assets/pictogram/D25.jpg
+    - assets/pictogram/D26.jpg
+    - assets/pictogram/D27.jpg
+    - assets/pictogram/E01.jpg
+    - assets/pictogram/E02.jpg
+    - assets/pictogram/E03.jpg
+    - assets/pictogram/E04.jpg
+    - assets/pictogram/E05.jpg
+    - assets/pictogram/E06.jpg
+    - assets/pictogram/E07.jpg
+    - assets/pictogram/E08.jpg
+    - assets/pictogram/E09.jpg
+    - assets/pictogram/F01.jpg
+    - assets/pictogram/F02.jpg
+    - assets/pictogram/F03.jpg
+    - assets/pictogram/F04.jpg
+    - assets/pictogram/F05.jpg
+    - assets/pictogram/F06.jpg
+    - assets/pictogram/F07.jpg
+    - assets/pictogram/F08.jpg
+    - assets/pictogram/F09.jpg
+    - assets/pictogram/F10.jpg
+    - assets/pictogram/F11.jpg
+    - assets/pictogram/F12.jpg
+    - assets/pictogram/F13.jpg
+    - assets/pictogram/F14.jpg
+    - assets/pictogram/F15.jpg
+    - assets/pictogram/F16.jpg
+    - assets/pictogram/F17.jpg
+    - assets/pictogram/F18.jpg
+    - assets/pictogram/F19.jpg
+    - assets/pictogram/I01.jpg
+    - assets/pictogram/I02.jpg
+    - assets/pictogram/I03.jpg
+    - assets/pictogram/I04.jpg
+    - assets/pictogram/I05.jpg
+    - assets/pictogram/I06.jpg
+    - assets/pictogram/I07.jpg
+    - assets/pictogram/I08.jpg
+    - assets/pictogram/P01.jpg
+    - assets/pictogram/P02.jpg
+    - assets/pictogram/P03.jpg
+    - assets/pictogram/P05.jpg
+    - assets/pictogram/P06.jpg
+    - assets/pictogram/P07.jpg
+    - assets/pictogram/P08.jpg
+    - assets/pictogram/P09.jpg
+    - assets/pictogram/P10.jpg
+    - assets/pictogram/P11.jpg
+    - assets/pictogram/P12.jpg
+    - assets/pictogram/P14.jpg
+    - assets/pictogram/P15.jpg
+    - assets/pictogram/P16.jpg
+    - assets/pictogram/P17.jpg
+    - assets/pictogram/P18.jpg
+    - assets/pictogram/P19.jpg
+    - assets/pictogram/S01.jpg
+    - assets/pictogram/S02.jpg
+    - assets/pictogram/S03.jpg
+    - assets/pictogram/S04.jpg
+    - assets/pictogram/S05.jpg
+    - assets/pictogram/S06.jpg
+    - assets/pictogram/S07.jpg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_native_splash:
+  color: "#16c2d5"
+  image: "assets/pillumi-splash.png"
+  fullscreen: true
