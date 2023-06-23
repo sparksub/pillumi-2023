@@ -25,8 +25,7 @@ class PillModel():
 
     # shape
     def pill_shape_conf(self):
-        # TODO
-        self.model_file = self.workDirectory + "100_background_100.pt"
+        self.model_file = self.workDirectory + "100_all_0605.pt"
 
     # model loading
     def pill_model_loading(self, config):
@@ -46,30 +45,9 @@ class PillModel():
     def pill_sorting(self, output, drug_code_list):
         # accuracy sorting
         indices_objects = []
-        our = ['K-008902', 'K-009379', 'K-005886', 'K-046737']
-        check = 0
-        check_idx = 0
         for i in range(len(self.dataset)):
-            if self.dataset[i] in our:
-                found = our.index(self.dataset[i])
-                our[found] = i
-                # indices_objects.append(PillName.PillName(self.dataset[i], output[0][i] + 0.5))
-                if check < output[0][i]:
-                    check = output[0][i]
-                    check_idx = i
+            indices_objects.append(PillName.PillName(self.dataset[i], output[0][i]))
 
-            elif self.dataset[i] == 'K-004378':
-                continue
-            elif self.dataset[i] == 'K-004799':
-                continue
-            else:
-                indices_objects.append(PillName.PillName(self.dataset[i], output[0][i]))
-
-        for i in our:
-            if i == check_idx:
-                indices_objects.append(PillName.PillName(self.dataset[check_idx], output[0][check_idx] + 0.3))
-            else:
-                indices_objects.append(PillName.PillName(self.dataset[check_idx], output[0][check_idx]))
         indices_objects = sorted(indices_objects, key=attrgetter('accuracy'), reverse=True)
         self.pill_top = len(self.dataset) if len(self.dataset) < self.top_count else self.top_count
 

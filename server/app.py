@@ -26,4 +26,4 @@ if __name__ == "__main__":
     load_segment_model()
 
     api.add_namespace(pill_search)
-    app.run(utils.ip, port=5000, debug=True)
+    app.run(utils.ip, port=5001, debug=True)

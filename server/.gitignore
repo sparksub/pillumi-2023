@@ -1,1 +1,5 @@
 venv
+api/pill_search/ai_model/100_all_0605.pt
+api/pill_search/ai_model/100_background_100.pt
+api/pill_search/ai_model/100_background_300.pt
+api/pill_model/saved_models

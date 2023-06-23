@@ -54,6 +54,8 @@ class search_pill(Resource):
 
             searching_pill = PillMain()
             result_pills = searching_pill.main(['assets/results/result_front.png', 'assets/results/result_back.png'])
+            # result_pills = searching_pill.main(['assets/pill_front.jpg', 'assets/pill_back.jpg'])
+
             pred = []
 
             for pill in result_pills:
@@ -65,7 +67,6 @@ class search_pill(Resource):
 
             for i in pred:
                 similar.append(get_pill_info_json(i))
-            print(len(similar))
             return {
                 "ResultsPill": similar
             }, 200
